@@ -24,26 +24,26 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com/jaygurav",
-      username: "@jaygurav"
+      url: "https://github.com/JayG1711",
+      username: "@JayG1711"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/in/jay-gurav/",
       username: "Jay Gurav"
     },
     {
       icon: Mail,
       label: "TryHackMe",
-      url: "https://tryhackme.com/p/jaygurav",
-      username: "jaygurav"
+      url: "https://tryhackme.com/p/Jayg17",
+      username: "Jayg17"
     },
     {
       icon: Mail,
       label: "Email",
-      url: "mailto:jaygurav@gmail.com",
-      username: "jaygurav@gmail.com"
+      url: "mailto:jaygurav2004@gmail.com",
+      username: "jaygurav2004@gmail.com"
     }
   ];
 
