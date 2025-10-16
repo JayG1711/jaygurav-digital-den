@@ -10,23 +10,23 @@ const Home = () => {
       <Navigation />
 
       <main className="container mx-auto px-6 pt-32 pb-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-fade-in">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center space-y-8 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card">
               <Shield className="w-4 h-4 text-primary" />
               <span className="text-sm">Cybersecurity Professional</span>
             </div>
 
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 glow-text">
+              <h1 className="text-6xl md:text-7xl font-bold mb-6 glow-text">
                 Jay Gurav
               </h1>
-              <p className="text-xl text-primary font-medium mb-6">
+              <p className="text-2xl text-primary font-medium mb-8">
                 Cybersecurity Enthusiast | Ethical Hacker | B.Tech Student
               </p>
             </div>
 
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Hi, I'm Jay Gurav — a passionate cybersecurity enthusiast and ethical hacker 
               currently pursuing my B.Tech in Cyber Security at Shah and Anchor Kutchhi 
               Engineering College. I'm deeply interested in discovering vulnerabilities, 
@@ -35,47 +35,58 @@ const Home = () => {
               hands-on cybersecurity projects.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center gap-4 pt-4">
               <Link to="/contact">
-                <Button className="group bg-primary hover:bg-primary/90 text-primary-foreground px-8">
+                <Button className="group bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
                   Contact Me
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link to="/projects">
-                <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
+                <Button variant="outline" className="border-primary/50 hover:bg-primary/10 px-8 py-6 text-lg">
                   View Projects
                 </Button>
               </Link>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="glass-card cyber-border rounded-2xl p-8 space-y-6">
-              <div className="aspect-square rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <Shield className="w-24 h-24 text-primary mx-auto animate-float" />
-                  <p className="text-sm text-muted-foreground">Professional Photo</p>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-3 gap-4">
-                <div className="glass-card p-4 rounded-lg text-center hover:scale-105 transition-transform">
-                  <Terminal className="w-6 h-6 text-primary mx-auto mb-2" />
-                  <p className="text-xs text-muted-foreground">Ethical Hacking</p>
-                </div>
-                <div className="glass-card p-4 rounded-lg text-center hover:scale-105 transition-transform">
-                  <Lock className="w-6 h-6 text-primary mx-auto mb-2" />
-                  <p className="text-xs text-muted-foreground">Security Research</p>
-                </div>
-                <div className="glass-card p-4 rounded-lg text-center hover:scale-105 transition-transform">
-                  <Shield className="w-6 h-6 text-primary mx-auto mb-2" />
-                  <p className="text-xs text-muted-foreground">Defense Tools</p>
-                </div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
+            <div className="glass-card cyber-border rounded-2xl p-8 text-center hover:scale-105 transition-transform group">
+              <Terminal className="w-12 h-12 text-primary mx-auto mb-4 group-hover:animate-float" />
+              <h3 className="text-xl font-bold mb-2">Ethical Hacking</h3>
+              <p className="text-sm text-muted-foreground">
+                Penetration testing and vulnerability assessment
+              </p>
             </div>
+            <div className="glass-card cyber-border rounded-2xl p-8 text-center hover:scale-105 transition-transform group">
+              <Lock className="w-12 h-12 text-primary mx-auto mb-4 group-hover:animate-float" />
+              <h3 className="text-xl font-bold mb-2">Security Research</h3>
+              <p className="text-sm text-muted-foreground">
+                Discovering and analyzing security vulnerabilities
+              </p>
+            </div>
+            <div className="glass-card cyber-border rounded-2xl p-8 text-center hover:scale-105 transition-transform group">
+              <Shield className="w-12 h-12 text-primary mx-auto mb-4 group-hover:animate-float" />
+              <h3 className="text-xl font-bold mb-2">Defense Tools</h3>
+              <p className="text-sm text-muted-foreground">
+                Building tools to strengthen digital security
+              </p>
+            </div>
+          </div>
 
+          <div className="mt-20 glass-card cyber-border rounded-2xl p-12 text-center relative overflow-hidden">
             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+            <Shield className="w-20 h-20 text-primary mx-auto mb-6 animate-float" />
+            <h2 className="text-3xl font-bold mb-4">Ready to Collaborate?</h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Let's work together on cybersecurity projects, research, or discuss the latest 
+              in ethical hacking and digital security.
+            </p>
+            <Link to="/contact">
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
+                Get In Touch
+              </Button>
+            </Link>
           </div>
         </div>
       </main>
